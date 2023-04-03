@@ -1,19 +1,19 @@
 package org.example;
 
 public class Beer extends Product{
-    private int volume;
+    private double volume;
 
 
-    public Beer(String name, double cost, int volume) {
+    public Beer(String name, double cost, double volume) {
         super(name, cost);
         this.volume = volume;
     }
 
-    public int getVolume() {
+    public double getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(double volume) {
         this.volume = volume;
     }
 

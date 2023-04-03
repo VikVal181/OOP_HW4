@@ -17,15 +17,5 @@ public class GeneralVendingMachine <T extends Product > implements VendingMachin
         }
         throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
     }
-    public T getProduct(String name, int volume){
-        for(T product: products) {
-            if (product instanceof Beer || product instanceof BottleOfWater) {
-                if(product.getName().equalsIgnoreCase(name) && product.getVolume() == volume){
-                    return product;
-                }
-            }
-        }
-        throw new IllegalStateException(String.format("Продукт c названием %s не найден.", name));
-    }
 }
 
